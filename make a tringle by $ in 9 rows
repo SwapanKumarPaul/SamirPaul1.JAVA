@@ -1,0 +1,13 @@
+package tesr.java;
+public class Practice {
+	public static void main(String[] args) {
+// make a tringle by $ in 9 rows
+		for (int i = 0;i<9;i++) {
+			for(int j = 0; j<i+1 ; j++) {
+				System.out.print("$");
+			}
+			System.out.println();
+		}
+	}
+
+}
