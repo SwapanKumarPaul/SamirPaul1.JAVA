@@ -1,0 +1,16 @@
+package tesr.java;
+public class Practice {
+	public static void main(String[] args) {
+		System.out.println(sum(5,4,1));
+		System.out.println(mul(48,95,59));
+		
+		
+	}
+	static int sum(int a, int b, int c) {
+	return a+b+c;}
+	static int mul(int a,int b, int c) {
+		return a*b*c;
+	}
+	
+	
+}
