@@ -1,0 +1,18 @@
+package tesr.java;
+public class Practice {  
+	public static void main(String [] args) {
+		
+		System.out.println(Add(2,4));
+		System.out.println(Add(2.49,84.38));
+		System.out.println(Add("Samir Paul"," is the best"));
+    }
+	public static int Add(int a, int b) {
+		return a+b;
+	}
+	public static double Add(double a, double b) {
+		return a+b;
+	}
+	public static String Add(String a, String b) {
+		return a+b;
+	}
+ }
