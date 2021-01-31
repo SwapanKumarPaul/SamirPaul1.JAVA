@@ -1,0 +1,31 @@
+package tesr.java;
+public class Practice {
+	public static void main(String[] args) {
+		Student student = new Student("Samir", 20);
+		System.out.println(student.getName());
+		student.setName("Sagar");
+		System.out.println(student.getName());
+	}
+}
+
+class Student {
+	private String name;//Samir Paul
+	int age;//20
+	
+	Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String info() {
+		return name+" "+age;
+	}
+}
