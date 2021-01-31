@@ -1,0 +1,14 @@
+package tesr.java;
+public class Practice {
+	int id;
+	String name;
+	int age;
+	public static void main(String[] args) {
+		Practice Samir = new Practice();
+		Samir.id = 1;
+		Samir.name = "Samir Paul";
+		Samir.age = 19;
+		System.out.println(Samir.id + " is "+ Samir.name + " ID and he is "+ Samir.age+"  years old");
+		
+	}
+}
