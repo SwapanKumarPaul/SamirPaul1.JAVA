@@ -1,0 +1,33 @@
+package tesr.java;
+public class Practice {
+	int id;
+	String name;
+	int age;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public static void main(String[] args) {
+		Practice practice = new Practice();
+		practice.setId(1);
+		practice.setName("Samir Paul");
+		practice.setAge(19);
+		System.out.println(practice.getId() + " is "+ practice.getName() + " ID and he is "+ practice.getAge()+"  years old");
+		
+	}
+}
