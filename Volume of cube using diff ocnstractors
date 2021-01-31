@@ -1,0 +1,26 @@
+package tesr.java;
+public class Practice {  //Class
+	int length;
+	int breath;
+	int height;
+	public int getVolume() {
+		return length*breath*height;
+	}
+	Practice(){
+		length = 30;
+		breath = 20;
+		height = 10;
+		
+	}
+	Practice(int l, int b, int h){
+		length = l;
+		breath = b;
+		height = h;
+	}
+    public static void main(String [] args) {
+    	Practice cube = new Practice();
+    	System.out.println(cube.getVolume());
+    	Practice cube1 = new Practice(50,40,20);
+    	System.out.println(cube1.getVolume());
+    }
+ }
