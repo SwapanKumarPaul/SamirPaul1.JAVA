@@ -1,0 +1,23 @@
+package tesr.java;
+public class Practice {  
+	// Find Factorial by Recursion
+    public static int factorial(int n) {
+    	if(n<0) {
+    		return -1;
+    	}
+    	if (n <=1) {
+    		return 1;
+    	}
+    	else {
+    		return (n* factorial(n-1));
+    	}
+    }
+    public static void main (String []args) {
+    	int fact = factorial(6);
+    	if (fact == -1) {
+    		System.out.println("Factorial undefined");
+    	} else {
+    		System.out.println(fact);
+    	}
+    }
+}
