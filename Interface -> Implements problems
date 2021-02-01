@@ -1,0 +1,25 @@
+package tesr.java;
+public class Practice {  
+	
+	public static void main(String []args) {
+		Bank abc = new Bank_ABC();
+		Bank xyz = new bank_XYZ();
+		
+		System.out.println(abc.getInterestRate());
+		System.out.println(xyz.getInterestRate());
+		
+	}
+}
+  interface  Bank {
+	  public int getInterestRate();
+  }
+  class Bank_ABC implements Bank {
+	  public int getInterestRate() {
+		  return 12;
+	  }
+  }
+  class bank_XYZ implements Bank{
+	  public int getInterestRate() {
+		  return 15;
+	  }
+  }
