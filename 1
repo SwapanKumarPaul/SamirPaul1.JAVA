@@ -1,0 +1,38 @@
+package tesr.java;
+public class Practice {  
+	
+	public static void main(String []args) {
+		Rectangle rec = new Rectangle();
+		Triangle tri = new Triangle();
+		
+         rec.setValues(10, 10);
+         tri.setValues(10, 10);
+		
+		
+		System.out.println(rec.area());
+		System.out.println(tri.area());
+	}
+	
+ 
+class Polygon {
+	public int b;
+	public int h;
+	
+	public void setValues(int b, int h) {
+     this.b = b;
+	 this.h = h;	
+	}
+}
+
+
+class Rectangle extends Polygon{
+	public int area() {
+		return b*h;
+	}
+}
+class Triangle extends Polygon{
+	public double area() {
+		return (b*h)/2;
+	}
+ }
+}
