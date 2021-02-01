@@ -1,0 +1,28 @@
+package tesr.java;
+public class Practice {  
+	
+	public static void main(String []args) {
+		Bank abc = new Bank_ABC();
+		Bank xyz = new Bank_XYZ();
+		System.out.println(abc.returnInterest());
+		System.out.println(xyz.returnInterest());
+		
+		
+		
+ }
+}
+	class Bank {
+		public double returnInterest() {
+			return 0;
+		}
+	}
+	class Bank_ABC extends Bank{
+		public double returnInterest() {
+			return 12.50;
+		}
+	}
+	class Bank_XYZ extends Bank{
+		public double returnInterest() {
+			return 15.75;
+		}
+	}
