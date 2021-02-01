@@ -1,0 +1,25 @@
+package tesr.java;
+public class Practice {  
+	
+	public static void main(String []args) {
+		Bank abc = new Bank_ABC();
+		Bank def = new Bank_DEF();
+		System.out.println(abc.getInterestRate());
+		System.out.println(def.getInterestRate());
+		
+	}
+}
+abstract class Bank {
+	abstract public int getInterestRate();
+  }
+    
+	class Bank_ABC extends Bank{
+		public int getInterestRate() {
+			return 25;
+		}
+	}
+	class Bank_DEF extends Bank{
+		public int getInterestRate() {
+			return 12;
+		}
+	}
