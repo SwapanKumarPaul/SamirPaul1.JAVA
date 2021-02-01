@@ -1,0 +1,31 @@
+package tesr.java;
+import java.util.Scanner;
+public class Practice { 
+	public static int factorial(int n) {
+		if(n<0) {
+			return -1;
+		}
+		if(n==0) {
+			return 1;
+		}
+		if(n==1) {
+			return 1;
+		}
+		else {
+			return (n*factorial(n-1));
+		}
+	}
+	public static void main (String [] args) {
+		System.out.println("Write the value of number here:  ");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();	
+		
+		int fact = factorial(n);
+		if(fact == -1) {
+			System.out.println("Factorial is not defined");
+		}
+		else {
+			System.out.println(factorial(n));
+		}
+		}
+	}
