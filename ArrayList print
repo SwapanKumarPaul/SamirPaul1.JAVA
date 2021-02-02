@@ -1,0 +1,15 @@
+package tesr.java;
+import java.util.ArrayList;
+class Practice { 
+    public static void main(String[] args) {
+    	int simple_Array [] = new int[5];
+    	ArrayList<Integer> myList = new ArrayList<>(5);
+    	myList.add(3);
+    	myList.add(83);
+    	myList.add(91);
+    	myList.add(100);
+    	myList.add(500);
+    	for(Integer a: myList) {
+    	System.out.println(a);
+    	}
+    	System.out.println("Size =  "+ myList.size());
